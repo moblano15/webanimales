@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patitas Felices · Protectora y tienda solidaria</title>
+  <meta name="description" content="Adopta, apoya y conoce a los animales de Patitas Felices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Iconos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-paw" viewBox="0 0 24 24"><circle cx="5" cy="11" r="2.2"/><circle cx="9.5" cy="6" r="2.2"/><circle cx="14.5" cy="6" r="2.2"/><circle cx="19" cy="11" r="2.2"/><path d="M12 12c-3 0-6 3-6 5.5 0 1.7 1.5 2.5 3 2.5 1.2 0 2-.5 3-.5s1.8.5 3 .5c1.5 0 3-.8 3-2.5C18 15 15 12 12 12z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.4C.8 8 2.8 4.5 6.2 4.5c2 0 3.3 1 3.8 2 .5-1 1.8-2 3.8-2 3.4 0 5.4 3.5 3.8 7.1C19.5 16.4 12 21 12 21z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8a3 3 0 016 0"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+</svg>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="logo" href="#inicio" aria-label="Patitas Felices, inicio">
+      <span class="logo-mark"><svg width="20" height="20" fill="#fff" aria-hidden="true"><use href="#i-paw"/></svg></span>
+      <span class="logo-text"><strong>Patitas Felices</strong><small>Protectora y tienda solidaria</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#proceso">Proceso</a>
+      <a href="#animales">Adopción</a>
+      <a href="#ciegas">A ciegas</a>
+      <a href="#socio">Tienda</a>
+    </nav>
+    <div class="header-actions">
+      <button class="fav-pill" id="favButton" type="button" aria-label="Ver mis favoritos">
+        <svg width="16" height="16" class="ico-fill red" aria-hidden="true"><use href="#i-heart"/></svg>
+        <span id="favCount">0</span>
+      </button>
+      <a class="btn btn-accent btn-sm" href="#socio">Hazte socio</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Dale un hogar a tu <span>amigo fiel</span></h1>
+        <p class="lead">Conoce nuestro proceso de adopción, guarda a tus favoritos y apoya a la protectora con nuestra tienda solidaria.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#animales">Ver animales en adopción</a>
+          <a class="btn btn-outline" href="#ciegas">Adoptar a ciegas</a>
+        </div>
+        <dl class="stats">
+          <div><dt>Adopciones</dt><dd>+450</dd></div>
+          <div><dt>Transparencia</dt><dd>100%</dd></div>
+          <div><dt>Socios</dt><dd>+1.2k</dd></div>
+        </dl>
+      </div>
+      <!-- Fotos aleatorias: las rellena script.js (data-hero) -->
+      <div class="collage" aria-hidden="true">
+        <div class="ph ph-tall" style="--a:#d9a86c;--b:#7a4a22"><svg width="84" height="84"><use href="#i-paw"/></svg><img data-hero="0" alt="" hidden></div>
+        <div class="ph" style="--a:#6aa0c9;--b:#2c5d86"><svg width="56" height="56"><use href="#i-paw"/></svg><img data-hero="1" alt="" hidden></div>
+        <div class="ph" style="--a:#e59a5b;--b:#b4531c"><svg width="56" height="56"><use href="#i-paw"/></svg><img data-hero="2" alt="" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ICONOS CARACTERÍSTICOS -->
+  <section class="features" aria-label="Cómo colaborar">
+    <div class="container feature-row">
+      <article class="feature">
+        <span class="feature-icon"><svg class="ico-line" width="24" height="24" aria-hidden="true"><use href="#i-bag"/></svg><svg class="badge-heart ico-fill-white red" width="18" height="18" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        <div><h3>Tienda solidaria</h3><p>Todo lo que compras alimenta y cuida a los animales rescatados.</p></div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon"><svg class="ico-line" width="24" height="24" aria-hidden="true"><use href="#i-cal"/></svg><svg class="badge-heart ico-fill-white red" width="18" height="18" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        <div><h3>Eventos</h3><p>Ferias y jornadas de puertas abiertas: ven a conocernos.</p></div>
+      </article>
+      <article class="feature">
+        <span class="feature-icon"><svg class="ico-line" width="24" height="24" aria-hidden="true"><use href="#i-heart"/></svg><svg class="badge-heart ico-fill-white red" width="18" height="18" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        <div><h3>Socios y donaciones</h3><p>Una cuota mensual o una aportación puntual salvan vidas.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <h2 class="center">Proceso de adopción</h2>
+      <p class="lead center">Cuatro pasos claros para que tú y tu mascota empecéis bien.</p>
+      <ol class="timeline">
+        <li><span class="dot">1</span><h3>Explora y elige</h3><p>Filtra, guarda favoritos y haz el test.</p></li>
+        <li><span class="dot">2</span><h3>Solicitud</h3><p>Cuéntanos cómo es tu hogar.</p></li>
+        <li><span class="dot">3</span><h3>Entrevista y visita</h3><p>Os conocéis en la protectora.</p></li>
+        <li><span class="dot">4</span><h3>Seguimiento</h3><p>Chip, vet y revisiones tras la adopción.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ANIMALES -->
+  <section class="section" id="animales">
+    <div class="container">
+      <h2>Buscan una segunda oportunidad</h2>
+      <p class="lead">Todos nuestros protegidos tienen foto, ficha y ubicación. Guarda los que más te gusten.</p>
+
+      <div class="cats" role="group" aria-label="Filtrar por especie">
+        <button class="cat" type="button" data-filter="Perro" aria-pressed="false">
+          <span class="cat-blob">
+            <svg class="cat-heart" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 86S6 58 6 28C6 14 17 5 29 5c9 0 17 5 21 13C54 10 62 5 71 5c12 0 23 9 23 23 0 30-44 58-44 58z"/></svg>
+            <svg class="cat-face" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 18c-6 2-9 12-6 20 3 3 8 0 9-6l1-14zM50 18c6 2 9 12 6 20-3 3-8 0-9-6l-1-14z" opacity=".75"/><ellipse cx="32" cy="36" rx="19" ry="18"/><circle cx="25" cy="32" r="2.6" class="w"/><circle cx="39" cy="32" r="2.6" class="w"/><path d="M26 41q6 5 12 0" class="wl"/></svg>
+            <svg class="spark s1" width="20" height="20" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s2" width="14" height="14" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s3" width="12" height="12" aria-hidden="true"><use href="#i-star"/></svg>
+          </span>
+          <span class="tag">Perretes</span>
+        </button>
+        <button class="cat" type="button" data-filter="Gato" aria-pressed="false">
+          <span class="cat-blob">
+            <svg class="cat-heart" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 86S6 58 6 28C6 14 17 5 29 5c9 0 17 5 21 13C54 10 62 5 71 5c12 0 23 9 23 23 0 30-44 58-44 58z"/></svg>
+            <svg class="cat-face" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 8l12 10H10zM54 8L42 18h12z"/><ellipse cx="32" cy="36" rx="22" ry="18"/><circle cx="24" cy="33" r="2.6" class="w"/><circle cx="40" cy="33" r="2.6" class="w"/><path d="M27 42q5 4 10 0M4 36h12M4 42l11-3M60 36H48M60 42l-11-3" class="wl thin"/></svg>
+            <svg class="spark s1" width="20" height="20" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s2" width="14" height="14" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s3" width="12" height="12" aria-hidden="true"><use href="#i-star"/></svg>
+          </span>
+          <span class="tag">Gatetes</span>
+        </button>
+        <button class="cat" type="button" data-filter="Otro" aria-pressed="false">
+          <span class="cat-blob">
+            <svg class="cat-heart" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 86S6 58 6 28C6 14 17 5 29 5c9 0 17 5 21 13C54 10 62 5 71 5c12 0 23 9 23 23 0 30-44 58-44 58z"/></svg>
+            <svg class="cat-face" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect x="19" y="2" width="9" height="30" rx="4.5"/><rect x="36" y="2" width="9" height="30" rx="4.5"/><ellipse cx="32" cy="42" rx="19" ry="16"/><circle cx="25" cy="39" r="2.4" class="w"/><circle cx="39" cy="39" r="2.4" class="w"/><path d="M28 47q4 3 8 0" class="wl"/></svg>
+            <svg class="spark s1" width="20" height="20" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s2" width="14" height="14" aria-hidden="true"><use href="#i-star"/></svg>
+            <svg class="spark s3" width="12" height="12" aria-hidden="true"><use href="#i-star"/></svg>
+          </span>
+          <span class="tag">Otros animales</span>
+        </button>
+      </div>
+
+      <div class="pet-grid" id="petGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ADOPTAR A CIEGAS -->
+  <section class="blind-wrap" id="ciegas">
+    <div class="container">
+      <div class="blind">
+        <div class="blind-copy">
+          <span class="pill">Adoptar a ciegas</span>
+          <h2>Cierra los ojos. <strong>Tu pana ya existe.</strong></h2>
+          <p>¿No sabes a quién escoger? Cuéntanos cómo eres y te proponemos el animal que mejor encaja contigo.</p>
+          <form id="blindForm" class="blind-form">
+            <label>Tu casa
+              <select id="qHome"><option>Piso pequeño</option><option>Piso con terraza</option><option>Casa con jardín</option></select>
+            </label>
+            <label>Tu ritmo
+              <select id="qPace"><option>Tranquilo</option><option>Paseos diarios</option><option>Muy activo</option></select>
+            </label>
+            <label>Convives con
+              <select id="qLife"><option>Vivo solo/a</option><option>Con niños</option><option>Con otros animales</option></select>
+            </label>
+            <button class="btn btn-light" type="submit">Empezar a ciegas <span class="arrow"><svg width="12" height="12" class="ico-line-w" aria-hidden="true"><use href="#i-down"/></svg></span></button>
+          </form>
+          <div class="result" id="blindResult" role="status" hidden>
+            <span class="result-photo" id="resPhoto"><svg width="28" height="28" aria-hidden="true"><use href="#i-paw"/></svg></span>
+            <div><strong id="resName"></strong><p id="resText"></p></div>
+          </div>
+        </div>
+        <!-- Pasa el ratón para revelar la foto. Pon la foto real en --photo -->
+        <div class="reveal" id="reveal" role="img" aria-label="Foto oculta de un animal. Mueve el ratón para revelarla.">
+          <span class="reveal-paw"><svg width="150" height="150" aria-hidden="true"><use href="#i-paw"/></svg></span>
+          <span class="reveal-hint">Mueve el ratón para revelar la foto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAZTE SOCIO -->
+  <section class="socio-wrap" id="socio">
+    <div class="container">
+      <div class="socio">
+        <div><h2>Hazte socio protector</h2><p>Desde 10 € al mes mantienes el refugio abierto.</p></div>
+        <div class="cta-row">
+          <a class="btn btn-white" href="#">Tienda solidaria</a>
+          <a class="btn btn-outline-white" href="#">Haz tu aportación</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 Patitas Felices · Calle Refugio 45, Valencia · adopciones@patitasfelices.org</div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
